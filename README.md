@@ -153,5 +153,21 @@ http://localhost:8080/h2-console
 ```javascript
 Save the above content as a `README.md` file in your project root directory, and it will work perfectly with GitHub or other project hosting platforms!
 ```
+---
+
+## Screenshots
+
+I have added the following screenshots to demonstrate the different pages of the CRM application:
+
+1. **Home Page Screenshot**:
+   - ![Home Page](SS/1.png)
+
+2. **Customer List Page Screenshot**:
+   - ![Customer List](SS/2.png)
+
+3. **Customer Form Page Screenshot**:
+   - ![Customer Form](SS/3.png)
+
+These screenshots are stored in the `SS` folder located at the root of the project.
 
 ---
