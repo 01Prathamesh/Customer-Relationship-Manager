@@ -7,30 +7,53 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <h1>Customer List</h1>
-    <a href="/customers/new">Add New Customer</a>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Address</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="customer : ${customers}">
-                <td th:text="${customer.name}"></td>
-                <td th:text="${customer.email}"></td>
-                <td th:text="${customer.phone}"></td>
-                <td th:text="${customer.address}"></td>
-                <td>
-                    <a th:href="@{/customers/edit/{id}(id=${customer.id})}">Edit</a> | 
-                    <a th:href="@{/customers/delete/{id}(id=${customer.id})}">Delete</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <header>
+        <div class="logo-container">
+            <h1>Customer Management</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/customers">Customer List</a></li>
+                <li><a href="/customers/new">Add New Customer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div style="text-align: center; margin: 20px;">
+            <a href="/customers/new">
+                <button>Add New Customer</button>
+            </a>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="customer : ${customers}">
+                    <td th:text="${customer.name}"></td>
+                    <td th:text="${customer.email}"></td>
+                    <td th:text="${customer.phone}"></td>
+                    <td th:text="${customer.address}"></td>
+                    <td class="actions">
+                        <a th:href="@{/customers/edit/{id}(id=${customer.id})}">Edit</a> | 
+                        <a th:href="@{/customers/delete/{id}(id=${customer.id})}">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Prathamesh Kasar. All rights reserved.</p>
+    </footer>
 </body>
 </html>
