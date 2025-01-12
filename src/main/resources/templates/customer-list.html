@@ -21,10 +21,8 @@
     </header>
 
     <main>
-        <div style="text-align: center; margin: 20px;">
-            <a href="/customers/new">
-                <button>Add New Customer</button>
-            </a>
+        <div class="action-buttons">
+            <a href="/customers/new"><button class="primary-button">Add New Customer</button></a>
         </div>
 
         <table>
@@ -44,8 +42,8 @@
                     <td th:text="${customer.phone}"></td>
                     <td th:text="${customer.address}"></td>
                     <td class="actions">
-                        <a th:href="@{/customers/edit/{id}(id=${customer.id})}">Edit</a> | 
-                        <a th:href="@{/customers/delete/{id}(id=${customer.id})}">Delete</a>
+                        <a class="edit-link" th:href="@{/customers/edit/{id}(id=${customer.id})}">Edit</a>
+                        <a class="delete-link" th:href="@{/customers/delete/{id}(id=${customer.id})}">Delete</a>
                     </td>
                 </tr>
             </tbody>
