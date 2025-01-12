@@ -61,4 +61,16 @@ public class CustomerController {
         customerService.deleteCustomer(id);
         return "redirect:/customers";
     }
+    
+    //FAQ Page mapping
+    @GetMapping("/faq")
+    public String showFaqPage() {
+        return "faq"; 
+    }
+    
+    //About Page Mapping
+    @GetMapping("/about")
+    public String showAboutPage() {
+        return "about";
+    }
 }
