@@ -74,7 +74,7 @@ Update the src/main/resources/application.properties file with your MySQL creden
 Access the Application
 Open your browser and go to:
 ```bash
-http://localhost:8080/customers
+http://localhost:8080/
 ```
 
 ---
@@ -83,11 +83,14 @@ http://localhost:8080/customers
 
 | Endpoint               | Description                                  |
 |------------------------|----------------------------------------------|
+| `/`                    | Home Page                                   | 
 | `/customers`           | View all customers                          |
 | `/customers/new`       | Add a new customer                          |
 | `/customers/edit/{id}` | Edit an existing customer                   |
 | `/customers/delete/{id}` | Delete a customer                         |
 | `/h2-console`          | Access the H2 database console (dev)        |
+| `/faq`                 | Frequently Asked Questions (placeholder)    |
+| `/about`               | About the CRM application                   |
 
 ---
 
@@ -111,6 +114,12 @@ src/main/resources
 │   ├── customer-list.html           # Template for customer list
 │   └── customer-form.html           # Template for add/edit form
 └── static              
+
+SS
+├── 1.png                            # Home page screenshot
+├── 2.png                            # Another home page view
+├── 3.png                            # Customer list page screenshot
+└── 4.png                            # Customer form page screenshot
 ```
 
 ---
@@ -118,11 +127,13 @@ src/main/resources
 ## Database
 ### Schema
 #### Table: customers
+```
 - id (Primary Key, Auto Increment)
 - name (String, Non-Null)
 - email (String, Non-Null)
 - phone (String, Non-Null)
 - address (String)
+```
 
 ### Accessing the H2 Console
 1. Go to:
@@ -147,13 +158,41 @@ http://localhost:8080/h2-console
 ### Debugging Database Issues
 - Use the H2 console to verify data in development mode.
 
-### Acknowledgments
-- Spring Boot Documentation: spring.io
-- Thymeleaf Documentation: thymeleaf.org
-```javascript
-Save the above content as a `README.md` file in your project root directory, and it will work perfectly with GitHub or other project hosting platforms!
-```
 ---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## Code of Conduct
+
+This project adheres to the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [prathameshkasar.work@gmail.com](mailto:prathameshkasar.work@gmail.com).
+
+---
+
+## Reporting Issues
+
+If you encounter any issues or have suggestions for improvement, feel free to open an issue on [GitHub](https://github.com/01Prathamesh/Customer-Relationship-Manager/issues).
+
+
+<!-- ## Screenshots
+
+| Screenshot                      | Description               |
+|---------------------------------|---------------------------|
+| ![Home Page](SS/1.png)          | Home page view 1          |
+| ![Home Page](SS/2.png)          | Home page view 2          |
+| ![Customer List](SS/3.png)      | Customer list page        |
+| ![Customer Form](SS/4.png)      | Customer form page        | -->
+
+---
+
+## Acknowledgments
+
+- **Spring Boot Documentation**: [spring.io](https://spring.io)
+- **Thymeleaf Documentation**: [thymeleaf.org](https://www.thymeleaf.org)
+
 
 ## Screenshots
 
