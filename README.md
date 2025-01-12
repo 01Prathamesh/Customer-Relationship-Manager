@@ -159,14 +159,17 @@ Save the above content as a `README.md` file in your project root directory, and
 
 I have added the following screenshots to demonstrate the different pages of the CRM application:
 
-1. **Home Page Screenshot**:
+1. **Home Page Screenshot 1**:
    - ![Home Page](SS/1.png)
 
-2. **Customer List Page Screenshot**:
-   - ![Customer List](SS/2.png)
+2. **Home Page Screenshot 2**:
+   - ![Home Page](SS/2.png)
 
-3. **Customer Form Page Screenshot**:
-   - ![Customer Form](SS/3.png)
+3. **Customer List Page Screenshot**:
+   - ![Customer List](SS/3.png)
+
+4. **Customer Form Page Screenshot**:
+   - ![Customer Form](SS/4.png)
 
 These screenshots are stored in the `SS` folder located at the root of the project.
 
